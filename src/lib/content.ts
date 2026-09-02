@@ -111,7 +111,7 @@ export const highlights = [
   { value: "3", label: "toques para registrar uma venda" },
   { value: "0", label: "planilhas para manter" },
   { value: "100%", label: "pensado para o celular" },
-  { value: "R$ 0", label: "para começar a usar" },
+  { value: "14 dias", label: "grátis, sem cartão de crédito" },
 ];
 
 export const faqs = [
@@ -134,6 +134,22 @@ export const faqs = [
   {
     q: "O que é o parcelamento sem cartão do Coolkies?",
     a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Coolkies registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
+  },
+  {
+    q: "Qual plano eu escolho e o que é um workspace?",
+    a: "Workspace é um espaço de trabalho independente, com seus próprios produtos, estoque, clientes e painel. Se você toca um negócio só, o Balcão resolve. Se você separa marcas, pontos de venda, sócios ou uma cozinha e uma loja, o Fornada dá até quatro. Acima disso, o Rede é sob medida.",
+  },
+  {
+    q: "Por que o plano anual é mais barato?",
+    a: "Porque você paga uma vez só e o preço fica travado até a próxima renovação. No Balcão são R$ 19,90 por mês em vez de R$ 29,90, e no Fornada R$ 89,90 em vez de R$ 99,90 — R$ 120 de economia por ano nos dois casos. Não há fidelidade: o desconto é pelo pagamento antecipado, não por contrato preso.",
+  },
+  {
+    q: "Posso testar antes de pagar?",
+    a: "Pode. São 14 dias grátis com todos os recursos liberados e sem cartão de crédito. Se não fizer sentido, é só não assinar — e o que você cadastrou continua lá se voltar depois.",
+  },
+  {
+    q: "E se eu quiser trocar de plano ou cancelar?",
+    a: "Troca de plano a qualquer momento, com o valor ajustado proporcionalmente. Cancelamento também a qualquer momento, sem multa e sem ligação de retenção. Seus dados podem ser exportados antes de sair.",
   },
   {
     q: "Se eu reajustar meus preços, o histórico muda?",
