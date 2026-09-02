@@ -7,6 +7,7 @@ import { Features } from "@/components/sections/features";
 import { Installments } from "@/components/sections/installments";
 import { Steps } from "@/components/sections/steps";
 import { Highlights } from "@/components/sections/highlights";
+import { Pricing } from "@/components/sections/pricing";
 import { Faq } from "@/components/sections/faq";
 import { Cta } from "@/components/sections/cta";
 import { JsonLd } from "@/components/json-ld";
@@ -24,6 +25,7 @@ export default function Home() {
         <Installments />
         <Steps />
         <Highlights />
+        <Pricing />
         <Faq />
         <Cta />
       </main>

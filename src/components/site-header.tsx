@@ -8,6 +8,7 @@ const links = [
   { href: "#recursos", label: "Recursos" },
   { href: "#parcelado", label: "Parcelado na Palavra" },
   { href: "#como-funciona", label: "Como funciona" },
+  { href: "#precos", label: "Preços" },
   { href: "#perguntas", label: "Dúvidas" },
 ];
 

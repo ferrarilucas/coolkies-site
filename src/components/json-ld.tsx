@@ -1,4 +1,5 @@
 import { faqs, features } from "@/lib/content";
+import { plans } from "@/lib/pricing";
 import { site } from "@/lib/site";
 
 export function JsonLd() {
@@ -30,12 +31,18 @@ export function JsonLd() {
         url: site.url,
         description: site.description,
         featureList: features.map((feature) => feature.title),
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "BRL",
-          price: "0",
-          description: "Teste gratuito",
-        },
+        offers: plans
+          .filter((plan) => plan.yearlyMonthly !== null)
+          .map((plan) => ({
+            "@type": "Offer",
+            name: `${site.name} ${plan.name}`,
+            priceCurrency: "BRL",
+            price: (plan.yearlyMonthly! * 12).toFixed(2),
+            description: `${plan.workspaces} — plano anual, equivalente a R$ ${plan
+              .yearlyMonthly!.toFixed(2)
+              .replace(".", ",")} por mês. 14 dias de teste grátis.`,
+            category: "SubscriptionPlan",
+          })),
         publisher: { "@id": `${site.url}/#org` },
       },
       {
