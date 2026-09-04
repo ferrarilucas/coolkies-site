@@ -141,11 +141,11 @@ export const faqs = [
   },
   {
     q: "Por que o plano anual é mais barato?",
-    a: "Porque você paga uma vez só e o preço fica travado até a próxima renovação: R$ 120 de economia por ano em qualquer plano. Somando o desconto do Pix recorrente, são R$ 240 por ano — o Corre sai de R$ 39,90 para R$ 19,90 por mês e o Cresce de R$ 109,90 para R$ 89,90. Não há fidelidade: o desconto é pelo pagamento antecipado, não por contrato preso.",
+    a: "Porque você paga uma vez só e o preço fica travado até a próxima renovação: R$ 120 de economia por ano em qualquer plano. Somando o desconto do Pix recorrente, são R$ 180 por ano — o Corre sai de R$ 39,50 para R$ 24,50 por mês e o Cresce de R$ 99,90 para R$ 84,90. Não há fidelidade: o desconto é pelo pagamento antecipado, não por contrato preso.",
   },
   {
     q: "Como funciona o desconto do Pix recorrente?",
-    a: "O Pix recorrente é a autorização que você dá uma única vez no app do seu banco para que a cobrança do Bigas seja debitada sozinha na data combinada — sem cartão e sem boleto para pagar todo mês. Como esse meio custa menos para nós do que a bandeira do cartão, devolvemos a diferença: R$ 10 a menos por mês, em qualquer plano e em qualquer ciclo. A autorização é cancelável por você no próprio banco, quando quiser.",
+    a: "O Pix recorrente é a autorização que você dá uma única vez no app do seu banco para que a cobrança do Bigas seja debitada sozinha na data combinada — sem cartão e sem boleto para pagar todo mês. Como esse meio custa menos para nós do que a bandeira do cartão, devolvemos a diferença: R$ 5 a menos por mês, em qualquer plano e em qualquer ciclo. A autorização é cancelável por você no próprio banco, quando quiser.",
   },
   {
     q: "Posso testar antes de pagar?",

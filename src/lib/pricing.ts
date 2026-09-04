@@ -20,8 +20,8 @@ export const plans: Plan[] = [
     tagline: "Para quem toca tudo sozinho e quer sair do caderninho hoje.",
     audience: "Vendedor individual",
     workspaces: "1 workspace",
-    monthly: 39.9,
-    yearlyMonthly: 29.9,
+    monthly: 39.5,
+    yearlyMonthly: 29.5,
     ctaLabel: "Começar teste de 14 dias",
     ctaHref: "app",
     features: [
@@ -42,8 +42,8 @@ export const plans: Plan[] = [
     tagline: "Para quem já produz em escala, tem equipe e mais de uma frente de venda.",
     audience: "Negócio em crescimento",
     workspaces: "Até 4 workspaces",
-    monthly: 109.9,
-    yearlyMonthly: 99.9,
+    monthly: 99.9,
+    yearlyMonthly: 89.9,
     featured: true,
     ctaLabel: "Começar teste de 14 dias",
     ctaHref: "app",
@@ -85,7 +85,7 @@ export const plans: Plan[] = [
   },
 ];
 
-export const pixDiscount = 10;
+export const pixDiscount = 5;
 
 export const guarantees = [
   "14 dias grátis com todos os recursos",

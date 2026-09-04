@@ -42,8 +42,8 @@ export function Pricing() {
           </h2>
           <p className="lead">
             Todos os planos vêm com os recursos completos do Bigas. O que muda é quantos workspaces e quantas
-            pessoas trabalham com você. No plano anual pago com Pix recorrente você economiza R$ 240 por
-            ano — no Corre, é o ano inteiro pelo preço de seis meses.
+            pessoas trabalham com você. No plano anual pago com Pix recorrente você economiza R$ 180 por
+            ano: R$ 120 por assinar o ano inteiro e mais R$ 60 por deixar a cobrança no Pix.
           </p>
         </Reveal>
 
