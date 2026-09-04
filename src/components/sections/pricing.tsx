@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Reveal } from "@/components/reveal";
-import { plans, guarantees } from "@/lib/pricing";
+import { plans, guarantees, pixDiscount } from "@/lib/pricing";
 import { site } from "@/lib/site";
 
 const brl = new Intl.NumberFormat("pt-BR", {
@@ -30,6 +30,7 @@ function Check({ muted = false }: { muted?: boolean }) {
 
 export function Pricing() {
   const [yearly, setYearly] = useState(true);
+  const [pix, setPix] = useState(true);
 
   return (
     <section id="precos" className="border-y border-border bg-card py-[clamp(70px,9vw,110px)]">
@@ -41,8 +42,8 @@ export function Pricing() {
           </h2>
           <p className="lead">
             Todos os planos vêm com os recursos completos do Bigas. O que muda é quantos workspaces e quantas
-            pessoas trabalham com você. No anual você economiza R$ 120 — no Corre, é o ano inteiro pelo preço de
-            oito meses.
+            pessoas trabalham com você. No plano anual pago com Pix recorrente você economiza R$ 240 por
+            ano — no Corre, é o ano inteiro pelo preço de seis meses.
           </p>
         </Reveal>
 
@@ -75,23 +76,50 @@ export function Pricing() {
               Mensal
             </button>
           </div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-success/12 px-3.5 py-2 text-[13px] font-extrabold uppercase tracking-wider text-success">
-            No anual você economiza R$ 120 por ano
-          </span>
+          <button
+            type="button"
+            role="switch"
+            aria-checked={pix}
+            onClick={() => setPix((value) => !value)}
+            className={`inline-flex items-center gap-2.5 rounded-full border px-4 py-2 text-[13px] font-extrabold transition-colors ${
+              pix
+                ? "border-transparent bg-soft text-soft-foreground"
+                : "border-border bg-secondary text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            <span
+              className={`relative h-[18px] w-8 shrink-0 rounded-full transition-colors ${
+                pix ? "bg-primary" : "bg-border"
+              }`}
+            >
+              <span
+                className={`absolute top-[3px] h-3 w-3 rounded-full bg-card transition-[left] duration-200 ${
+                  pix ? "left-[17px]" : "left-[3px]"
+                }`}
+              />
+            </span>
+            Pix recorrente · −{brl.format(pixDiscount)}/mês
+          </button>
         </Reveal>
 
         <p aria-live="polite" className="mb-10 text-center text-[14px] text-muted-foreground">
           {yearly
             ? "Cobrança única por ano, com o preço travado até a próxima renovação."
-            : "Cobrança todo mês, sem compromisso. Mude para o anual quando quiser e leve o desconto."}
+            : "Cobrança todo mês, sem compromisso. Mude para o anual quando quiser e leve o desconto."}{" "}
+          {pix
+            ? "Você autoriza o Pix recorrente uma vez no app do seu banco e cancela quando quiser."
+            : `No cartão o preço é cheio — o Pix recorrente tira ${brl.format(pixDiscount)} de cada mês.`}
         </p>
 
         <div className="grid items-start gap-[18px] lg:grid-cols-3">
           {plans.map((plan, index) => {
             const custom = plan.monthly === null || plan.yearlyMonthly === null;
-            const price = custom ? null : yearly ? plan.yearlyMonthly! : plan.monthly!;
+            const listed = custom ? null : yearly ? plan.yearlyMonthly! : plan.monthly!;
+            const price = custom ? null : listed! - (pix ? pixDiscount : 0);
             const perYear = custom ? null : price! * 12;
-            const off = custom ? 0 : Math.round((1 - plan.yearlyMonthly! / plan.monthly!) * 100);
+            const full = custom ? null : plan.monthly!;
+            const off = custom ? 0 : Math.round((1 - price! / full!) * 100);
+            const savedPerYear = custom ? 0 : (full! - price!) * 12;
             const featured = Boolean(plan.featured);
             const href = plan.ctaHref === "app" ? site.appUrl : site.whatsapp;
 
@@ -139,14 +167,14 @@ export function Pricing() {
                     ) : (
                       <>
                         <div className="flex min-h-[26px] items-center gap-2.5">
-                          {yearly && (
+                          {off > 0 && (
                             <>
                               <span
                                 className={`text-[15px] font-semibold line-through ${
                                   featured ? "text-primary-foreground/60" : "text-muted-foreground"
                                 }`}
                               >
-                                {brl.format(plan.monthly!)}
+                                {brl.format(full!)}
                               </span>
                               <span
                                 className={`rounded-full px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-wider ${
@@ -176,11 +204,11 @@ export function Pricing() {
                           }`}
                         >
                           {yearly
-                            ? `${brl.format(perYear!)} por ano, em uma cobrança só — você economiza ${brl.format(
-                                (plan.monthly! - plan.yearlyMonthly!) * 12,
-                              )}`
+                            ? `${brl.format(perYear!)} por ano, em uma cobrança só${
+                                savedPerYear > 0 ? ` — você economiza ${brl.format(savedPerYear)}` : ""
+                              }`
                             : `${brl.format(perYear!)} por ano — no plano anual sairia ${brl.format(
-                                plan.yearlyMonthly! * 12,
+                                (plan.yearlyMonthly! - (pix ? pixDiscount : 0)) * 12,
                               )}`}
                         </span>
                       </>
@@ -225,7 +253,11 @@ export function Pricing() {
                       featured ? "text-primary-foreground/75" : "text-muted-foreground"
                     }`}
                   >
-                    {custom ? "Resposta no mesmo dia útil" : "Sem cartão de crédito"}
+                    {custom
+                      ? "Resposta no mesmo dia útil"
+                      : pix
+                        ? `No cartão, ${brl.format(listed!)}/mês`
+                        : `${brl.format(listed! - pixDiscount)}/mês no Pix recorrente`}
                   </span>
                 </article>
               </Reveal>

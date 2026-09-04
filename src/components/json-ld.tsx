@@ -1,5 +1,5 @@
 import { faqs, features } from "@/lib/content";
-import { plans } from "@/lib/pricing";
+import { plans, pixDiscount } from "@/lib/pricing";
 import { site } from "@/lib/site";
 
 export function JsonLd() {
@@ -37,10 +37,12 @@ export function JsonLd() {
             "@type": "Offer",
             name: `${site.name} ${plan.name}`,
             priceCurrency: "BRL",
-            price: (plan.yearlyMonthly! * 12).toFixed(2),
-            description: `${plan.workspaces} — plano anual, equivalente a R$ ${plan
-              .yearlyMonthly!.toFixed(2)
-              .replace(".", ",")} por mês. 14 dias de teste grátis.`,
+            price: ((plan.yearlyMonthly! - pixDiscount) * 12).toFixed(2),
+            description: `${plan.workspaces} — plano anual pago com Pix recorrente, equivalente a R$ ${(
+              plan.yearlyMonthly! - pixDiscount
+            )
+              .toFixed(2)
+              .replace(".", ",")} por mês. No cartão, R$ ${plan.yearlyMonthly!.toFixed(2).replace(".", ",")} por mês. 14 dias de teste grátis.`,
             category: "SubscriptionPlan",
           })),
         publisher: { "@id": `${site.url}/#org` },
