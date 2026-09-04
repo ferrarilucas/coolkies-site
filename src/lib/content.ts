@@ -36,7 +36,7 @@ export const features: Feature[] = [
   {
     icon: "bag",
     title: "Mercados e comparação de preços",
-    text: "Registre onde comprou, quanto pagou e a quantidade. O Coolkies converte para a unidade base e mostra onde o mesmo insumo sai mais barato.",
+    text: "Registre onde comprou, quanto pagou e a quantidade. O Bigas converte para a unidade base e mostra onde o mesmo insumo sai mais barato.",
   },
   {
     icon: "list",
@@ -116,32 +116,32 @@ export const highlights = [
 
 export const faqs = [
   {
-    q: "O Coolkies serve para qualquer tipo de negócio?",
-    a: "Sim. O Coolkies nasceu no mundo dos produtos alimentícios — cookies, doces, salgados, marmitas, bolos — mas funciona para qualquer micro, pequeno ou médio vendedor que precise controlar vendas, clientes, estoque e custos: brechó, artesanato, cosméticos, bebidas, feira e revenda em geral.",
+    q: "O Bigas serve para qualquer tipo de negócio?",
+    a: "Sim. O Bigas nasceu no mundo dos produtos alimentícios — cookies, doces, salgados, marmitas, bolos — mas funciona para qualquer micro, pequeno ou médio vendedor que precise controlar vendas, clientes, estoque e custos: brechó, artesanato, cosméticos, bebidas, feira e revenda em geral.",
   },
   {
     q: "Preciso instalar algum programa?",
-    a: "Não. O Coolkies roda no navegador e pode ser instalado na tela inicial do celular como um aplicativo, com ícone próprio. Nada de loja de aplicativos, nada de atualização manual.",
+    a: "Não. O Bigas roda no navegador e pode ser instalado na tela inicial do celular como um aplicativo, com ícone próprio. Nada de loja de aplicativos, nada de atualização manual.",
   },
   {
     q: "Como funciona o controle de fiado e a previsão de recebimento?",
     a: "Toda venda pode ser marcada como paga ou pendente com data prevista. Há atalhos para as datas mais usadas no Brasil — o dia 5 do mês e o 5º dia útil, já considerando fins de semana e feriados nacionais. O valor a receber aparece no painel como receita prevista, separado do que já entrou.",
   },
   {
-    q: "O Coolkies calcula o custo dos meus produtos?",
+    q: "O Bigas calcula o custo dos meus produtos?",
     a: "Sim. Você registra as compras de insumos por mercado e o sistema converte tudo para a unidade base. Pagou R$ 2,50 no quilo de açúcar? Ele já sabe quanto custam os 200 g da sua receita — e usa isso para calcular o custo da ficha técnica e o custo por unidade produzida.",
   },
   {
-    q: "O que é o parcelamento sem cartão do Coolkies?",
-    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Coolkies registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
+    q: "O que é o parcelamento sem cartão do Bigas?",
+    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Bigas registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
   },
   {
     q: "Qual plano eu escolho e o que é um workspace?",
-    a: "Workspace é um espaço de trabalho independente, com seus próprios produtos, estoque, clientes e painel. Se você toca um negócio só, o Balcão resolve. Se você separa marcas, pontos de venda, sócios ou uma cozinha e uma loja, o Fornada dá até quatro. Acima disso, o Rede é sob medida.",
+    a: "Workspace é um espaço de trabalho independente, com seus próprios produtos, estoque, clientes e painel. Se você toca um negócio só, o Corre resolve. Se você separa marcas, pontos de venda, sócios ou uma cozinha e uma loja, o Cresce dá até quatro. Acima disso, o Escala é sob medida.",
   },
   {
     q: "Por que o plano anual é mais barato?",
-    a: "Porque você paga uma vez só e o preço fica travado até a próxima renovação. No Balcão são R$ 19,90 por mês em vez de R$ 29,90, e no Fornada R$ 89,90 em vez de R$ 99,90 — R$ 120 de economia por ano nos dois casos. Não há fidelidade: o desconto é pelo pagamento antecipado, não por contrato preso.",
+    a: "Porque você paga uma vez só e o preço fica travado até a próxima renovação. No Corre são R$ 19,90 por mês em vez de R$ 29,90, e no Cresce R$ 89,90 em vez de R$ 99,90 — R$ 120 de economia por ano nos dois casos. Não há fidelidade: o desconto é pelo pagamento antecipado, não por contrato preso.",
   },
   {
     q: "Posso testar antes de pagar?",

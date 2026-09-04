@@ -1,13 +1,13 @@
 export const site = {
-  name: "Coolkies",
-  url: "https://coolkies.com.br",
-  appUrl: "https://app.coolkies.com.br",
-  whatsapp: "https://wa.me/5500000000000?text=Quero%20conhecer%20o%20Coolkies",
-  email: "contato@coolkies.com.br",
-  title: "Coolkies — Sistema de gestão para pequenos negócios e vendedores",
-  tagline: "Seu negócio saiu do caderninho.",
+  name: "Bigas",
+  url: "https://bigas.com.br",
+  appUrl: "https://app.bigas.com.br",
+  whatsapp: "https://wa.me/5500000000000?text=Quero%20conhecer%20o%20Bigas",
+  email: "contato@bigas.com.br",
+  title: "Bigas — Sistema de gestão para pequenos negócios e vendedores",
+  tagline: "Negócio é negócio.",
   description:
-    "Coolkies é o sistema de gestão para micro, pequenos e médios vendedores: controle de vendas, fiado, estoque, receitas, custo real e previsão de recebimento. Do caderninho ao controle profissional, direto do celular.",
+    "Bigas é o sistema de gestão para micro, pequenos e médios vendedores: controle de vendas, fiado, estoque, receitas, custo real e previsão de recebimento. Do caderninho ao controle profissional, direto do celular.",
   shortDescription:
     "Vendas, fiado, estoque, receitas e custo real num só lugar. O sistema de gestão feito para quem vende de verdade.",
   keywords: [

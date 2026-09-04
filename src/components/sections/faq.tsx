@@ -16,7 +16,7 @@ export function Faq() {
             <Reveal key={faq.q} delay={index * 50}>
               <details
                 open={index === 0}
-                className="group overflow-hidden rounded-lg border border-border bg-background transition-[border-color,box-shadow] duration-300 open:border-caramel open:shadow-soft"
+                className="group overflow-hidden rounded-lg border border-border bg-secondary transition-[border-color,box-shadow] duration-300 open:border-primary open:shadow-soft"
               >
                 <summary className="flex cursor-pointer list-none items-center gap-3.5 p-5 text-[16.5px] font-bold tracking-tight [&::-webkit-details-marker]:hidden">
                   {faq.q}

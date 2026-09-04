@@ -1,6 +1,6 @@
 import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
-import { Check, Clock, Crumb, TrendUp } from "@/components/icons";
+import { Check, Clock, Sprout, TrendUp } from "@/components/icons";
 
 const bars = [
   { height: "42%", pending: false },
@@ -13,9 +13,9 @@ const bars = [
 ];
 
 const orders = [
-  { emoji: "🍪", name: "Marina · 12 cookies", sub: "Hoje, 14:20", amount: "R$ 96,00", tag: "Pago", paid: true },
-  { emoji: "🎂", name: "Bruno · Bolo + 6 doces", sub: "Combinado: dia 5", amount: "R$ 145,00", tag: "Fiado", paid: false },
-  { emoji: "🥐", name: "Padaria da Ana", sub: "5º dia útil", amount: "R$ 320,00", tag: "Previsto", paid: false },
+  { emoji: "🛍️", name: "Marina · Pedido #128", sub: "Hoje, 14:20", amount: "R$ 96,00", tag: "Pago", paid: true },
+  { emoji: "📦", name: "Bruno · Kit festa", sub: "Combinado: dia 5", amount: "R$ 145,00", tag: "Fiado", paid: false },
+  { emoji: "🧾", name: "Padaria da Ana", sub: "5º dia útil", amount: "R$ 320,00", tag: "Previsto", paid: false },
 ];
 
 const perks = ["Sem instalar nada", "Vira app na tela do celular", "Feito em português, para o Brasil"];
@@ -25,28 +25,28 @@ export function Hero() {
     <section id="topo" className="relative overflow-hidden py-[clamp(56px,9vw,110px)]">
       <span
         className="blob -right-36 -top-40 h-[520px] w-[520px] animate-blob-a"
-        style={{ background: "radial-gradient(circle,#DFA96E,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#22C55E,transparent 68%)" }}
         aria-hidden
       />
       <span
         className="blob -bottom-44 -left-40 h-[440px] w-[440px] animate-blob-b opacity-30"
-        style={{ background: "radial-gradient(circle,#8B5E3C,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#16A34A,transparent 68%)" }}
         aria-hidden
       />
       <span className="pointer-events-none absolute left-[6%] top-[18%] animate-drift opacity-50" aria-hidden>
-        <Crumb size={34} />
+        <Sprout size={34} />
       </span>
       <span
         className="pointer-events-none absolute bottom-[14%] left-[14%] animate-drift opacity-40 [animation-delay:-3s] [animation-duration:14s]"
         aria-hidden
       >
-        <Crumb size={22} tone="#C08B52" />
+        <Sprout size={22} tone="#34D399" />
       </span>
 
       <div className="container grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
           <Reveal as="span" className="eyebrow">
-            🍪 Feito para quem vende de verdade
+            <Sprout size={15} /> Feito para quem vende de verdade
           </Reveal>
 
           <Reveal as="h1" delay={80} className="my-5 text-[clamp(2.4rem,7vw,4.4rem)] font-black">
@@ -62,7 +62,7 @@ export function Hero() {
                 <path
                   d="M4 16 C 90 4, 190 4, 274 12 S 380 20, 416 10"
                   fill="none"
-                  stroke="#DFA96E"
+                  stroke="#22C55E"
                   strokeWidth={9}
                   strokeLinecap="round"
                   strokeDasharray={420}
@@ -75,7 +75,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal as="p" delay={160} className="lead">
-            Coolkies é o sistema de gestão que organiza{" "}
+            Bigas é o sistema de gestão que organiza{" "}
             <span className="rotator" aria-hidden>
               <span className="block animate-roll">
                 <b>suas vendas</b>
@@ -137,13 +137,13 @@ export function Hero() {
           <div
             className="phone-frame relative w-[min(330px,84vw)] animate-floaty rounded-[44px] p-[11px] shadow-deep"
             role="img"
-            aria-label="Painel do Coolkies com faturamento recebido, valores previstos, gráfico de vendas e lista de pedidos"
+            aria-label="Painel do Bigas com faturamento recebido, valores previstos, gráfico de vendas e lista de pedidos"
           >
-            <span className="absolute left-1/2 top-[9px] z-10 h-[22px] w-24 -translate-x-1/2 rounded-full bg-[#2E1B0F]" aria-hidden />
+            <span className="absolute left-1/2 top-[9px] z-10 h-[22px] w-24 -translate-x-1/2 rounded-full bg-[#0B0D0F]" aria-hidden />
             <div className="relative overflow-hidden rounded-[34px] bg-background">
               <div className="flex items-center justify-between px-4 pb-2.5 pt-[34px] text-xs font-semibold text-muted-foreground">
                 <span>9:41</span>
-                <span>Coolkies</span>
+                <span>Bigas</span>
               </div>
               <div className="px-4 pb-3 text-xl font-extrabold tracking-tight">Painel</div>
 
@@ -166,7 +166,7 @@ export function Hero() {
                       className={`flex-1 origin-bottom scale-y-0 animate-grow rounded-t ${
                         bar.pending
                           ? "border border-border bg-[repeating-linear-gradient(135deg,hsl(var(--secondary)),hsl(var(--secondary))_4px,hsl(var(--accent))_4px,hsl(var(--accent))_8px)]"
-                          : "bg-gradient-to-b from-caramel to-primary"
+                          : "bg-gradient-to-b from-mint to-primary"
                       }`}
                       style={{ height: bar.height, animationDelay: `${0.15 + index * 0.07}s` }}
                     />

@@ -31,7 +31,7 @@ export function Features() {
             <Reveal key={feature.title} delay={(index % 3) * 60}>
               <article
                 onMouseMove={onPointerMove}
-                className="feat-card group relative h-full overflow-hidden rounded-xl border border-border bg-background p-7 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:border-caramel hover:shadow-card"
+                className="feat-card group relative h-full overflow-hidden rounded-xl border border-border bg-secondary p-7 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-card"
               >
                 {feature.soon && (
                   <span className="absolute right-4 top-4 rounded-full bg-warning/15 px-2.5 py-1 text-[10.5px] font-extrabold uppercase tracking-wider text-warning-text">

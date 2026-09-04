@@ -143,29 +143,48 @@ export function Shield(props: Props) {
   );
 }
 
-export function CookieMark({ size = 36 }: { size?: number }) {
+export function BigasMark({ size = 36, className = "" }: { size?: number; className?: string }) {
   return (
-    <svg viewBox="0 0 512 512" width={size} height={size} aria-hidden>
-      <rect width="512" height="512" fill="#8B5E3C" />
-      <circle cx="256" cy="256" r="158" fill="#DFA96E" />
-      <circle cx="256" cy="256" r="158" fill="none" stroke="#C08B52" strokeWidth="14" />
-      <circle cx="205" cy="205" r="24" fill="#4B2E1A" />
-      <circle cx="300" cy="180" r="19" fill="#4B2E1A" />
-      <circle cx="330" cy="270" r="23" fill="#4B2E1A" />
-      <circle cx="240" cy="300" r="20" fill="#4B2E1A" />
-      <circle cx="175" cy="280" r="15" fill="#4B2E1A" />
-      <circle cx="285" cy="345" r="14" fill="#4B2E1A" />
+    <svg viewBox="-130 -130 1340 1340" width={size} height={size} className={className} aria-hidden>
+      <g transform="matrix(6.706568,0,0,6.706568,-1558.718151,-3132.090132)">
+        <g transform="matrix(1,0,0,1,65,271)">
+          <path
+            d="M280.353,206.635C305.839,240.857 269.888,267.696 258.498,267.722C249.643,267.742 224.713,265.344 200.492,290.492C190.604,300.758 187.373,311.667 186.76,313.738C186.256,315.441 184.763,313.904 184.734,313.459C184.447,309.072 185.338,309.138 185.203,258.5C185.19,253.698 185.057,204.045 185.231,198.481C185.337,195.092 187.476,196.251 254.494,196.068C270.377,196.024 277.138,203.678 280.353,206.635Z"
+            fill="#35B379"
+          />
+          <path
+            d="M262.88,268.656C264.081,268.314 269.712,266.711 278.493,268.534C333.569,279.969 313.766,356.473 258.501,357.537C258.42,357.538 187.977,357.597 187.49,357.585C182.213,357.46 191.765,341.117 198.971,332.906C205.12,325.899 262.576,268.947 262.88,268.656Z"
+            fill="#1C8F63"
+          />
+        </g>
+      </g>
     </svg>
   );
 }
 
-export function Crumb({ size = 30, tone = "#DFA96E" }: { size?: number; tone?: string }) {
+export function Sprout({ size = 30, tone = "#22C55E" }: { size?: number; tone?: string }) {
   return (
-    <svg viewBox="0 0 512 512" width={size} height={size} aria-hidden>
-      <circle cx="256" cy="256" r="200" fill={tone} />
-      <circle cx="205" cy="205" r="30" fill="#4B2E1A" />
-      <circle cx="320" cy="260" r="26" fill="#4B2E1A" />
-      <circle cx="240" cy="330" r="22" fill="#4B2E1A" />
+    <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden fill="none">
+      <path d="M12 21c0-5 1.6-8.4 5-10.4" stroke={tone} strokeWidth={1.8} strokeLinecap="round" />
+      <path d="M17 4.6c2.2 0 4 1.8 4 4 0 2.2-1.8 4-4 4-1.4 0-2.6-.7-3.3-1.8.6-3.3 2-5.4 3.3-6.2z" fill={tone} opacity={0.9} />
+      <path d="M7 8.6c-2.2 0-4 1.8-4 4 0 2.2 1.8 4 4 4 1.6 0 3-.9 3.6-2.3-.5-3.2-1.9-5-3.6-5.7z" fill={tone} opacity={0.55} />
+    </svg>
+  );
+}
+
+export function Sun(props: Props) {
+  return (
+    <svg viewBox="0 0 24 24" width={18} height={18} aria-hidden {...base} strokeWidth={2.2} {...props}>
+      <circle cx="12" cy="12" r="4.2" />
+      <path d="M12 2.4v2.2M12 19.4v2.2M4.2 12H2M22 12h-2.2M5.6 5.6 4 4M20 20l-1.6-1.6M18.4 5.6 20 4M4 20l1.6-1.6" />
+    </svg>
+  );
+}
+
+export function Moon(props: Props) {
+  return (
+    <svg viewBox="0 0 24 24" width={18} height={18} aria-hidden {...base} strokeWidth={2.2} {...props}>
+      <path d="M20 13.4A8.4 8.4 0 0 1 10.6 4a8.4 8.4 0 1 0 9.4 9.4z" />
     </svg>
   );
 }

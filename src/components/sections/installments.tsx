@@ -46,12 +46,12 @@ export function Installments() {
     <section id="parcelado" className="relative overflow-hidden py-[clamp(70px,9vw,110px)]">
       <span
         className="blob -right-32 top-10 h-[420px] w-[420px] animate-blob-a opacity-25"
-        style={{ background: "radial-gradient(circle,#DFA96E,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#22C55E,transparent 68%)" }}
         aria-hidden
       />
       <div className="container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal>
-          <span className="eyebrow">Em breve · exclusivo Coolkies</span>
+          <span className="eyebrow">Em breve · exclusivo Bigas</span>
           <h2 className="my-4 text-[clamp(1.9rem,4.4vw,3rem)]">
             Parcelado na Palavra: o <em className="not-italic text-primary">parcelamento de boca em boca</em>, agora com
             sistema atrás.
@@ -82,7 +82,7 @@ export function Installments() {
         <Reveal delay={120}>
           <div ref={ref} className="rounded-2xl border border-border bg-card p-[clamp(20px,3.4vw,30px)] shadow-card">
             <div className="mb-[18px] flex items-center gap-3 border-b border-dashed border-border pb-[18px]">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-xl">🧁</span>
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-xl">🎉</span>
               <span className="min-w-0">
                 <span className="block truncate font-extrabold tracking-tight">Bruno Almeida</span>
                 <span className="block text-[13px] text-muted-foreground">Kit festa · 3 parcelas combinadas</span>
@@ -100,7 +100,7 @@ export function Installments() {
                   <div
                     key={parcel.label}
                     className={`flex items-center gap-3 rounded-2xl border p-3 transition-colors duration-500 ${
-                      done ? "border-success/35 bg-success/5" : "border-border bg-background"
+                      done ? "border-success/35 bg-success/5" : "border-border bg-secondary"
                     }`}
                   >
                     <span
@@ -122,7 +122,7 @@ export function Installments() {
 
             <div className="mt-[18px] h-[7px] overflow-hidden rounded-full bg-muted">
               <span
-                className="block h-full rounded-full bg-gradient-to-r from-caramel to-primary transition-[width] duration-1000 ease-out"
+                className="block h-full rounded-full bg-gradient-to-r from-mint to-primary transition-[width] duration-1000 ease-out"
                 style={{ width: `${(paidValue / total) * 100}%` }}
               />
             </div>

@@ -11,6 +11,10 @@ const config: Config = {
     },
     extend: {
       colors: {
+        soft: {
+          DEFAULT: "hsl(var(--soft))",
+          foreground: "hsl(var(--soft-foreground))",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -46,9 +50,10 @@ const config: Config = {
           foreground: "hsl(var(--warning-foreground))",
           text: "hsl(var(--warning-text))",
         },
-        caramel: "#DFA96E",
-        choco: "#4B2E1A",
-        cookie: "#8B5E3C",
+        leaf: "#22C55E",
+        mint: "#34D399",
+        moss: "#14532D",
+        ink: "#0B0D0F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -64,9 +69,9 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 1px 2px hsl(25 30% 15% / .06)",
-        card: "0 8px 24px -8px hsl(25 30% 15% / .16)",
-        deep: "0 32px 64px -24px hsl(25 30% 15% / .28)",
+        soft: "0 1px 2px hsl(210 15% 5% / .06)",
+        card: "0 8px 28px -10px hsl(210 15% 5% / .18)",
+        deep: "0 32px 64px -24px hsl(210 15% 5% / .34)",
       },
       keyframes: {
         floaty: {

@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { CookieMark } from "@/components/icons";
+import { site } from "@/lib/site";
+import { BigasMark } from "@/components/icons";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
   { href: "#recursos", label: "Recursos" },
@@ -30,11 +32,14 @@ export function SiteHeader() {
       style={{ background: "hsl(var(--background) / 0.82)" }}
     >
       <div className="container flex h-[72px] items-center justify-between gap-6">
-        <Link href="#topo" className="group flex items-center gap-3 text-xl font-black tracking-[-0.03em]">
-          <span className="w-9 shrink-0 overflow-hidden rounded-[11px] shadow-soft group-hover:animate-wobble">
-            <CookieMark />
+        <Link href="#topo" className="group flex items-center gap-2.5">
+          <BigasMark size={34} className="shrink-0 transition-transform duration-300 group-hover:scale-110" />
+          <span className="flex flex-col leading-none">
+            <span className="text-[1.35rem] font-black tracking-[-0.045em]">Bigas</span>
+            <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+              {site.tagline}
+            </span>
           </span>
-          Coolkies
         </Link>
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-[15px] font-semibold text-muted-foreground lg:flex">
@@ -50,9 +55,12 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <a className="btn btn-primary px-5 py-[11px] text-[15px]" href="#comecar">
-          Quero testar
-        </a>
+        <div className="flex items-center gap-2.5">
+          <ThemeToggle />
+          <a className="btn btn-primary px-5 py-[11px] text-[15px]" href="#comecar">
+            Quero testar
+          </a>
+        </div>
       </div>
     </header>
   );

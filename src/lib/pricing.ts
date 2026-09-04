@@ -15,8 +15,8 @@ export type Plan = {
 
 export const plans: Plan[] = [
   {
-    id: "balcao",
-    name: "Balcão",
+    id: "corre",
+    name: "Corre",
     tagline: "Para quem toca tudo sozinho e quer sair do caderninho hoje.",
     audience: "Vendedor individual",
     workspaces: "1 workspace",
@@ -37,8 +37,8 @@ export const plans: Plan[] = [
     ],
   },
   {
-    id: "fornada",
-    name: "Fornada",
+    id: "cresce",
+    name: "Cresce",
     tagline: "Para quem já produz em escala, tem equipe e mais de uma frente de venda.",
     audience: "Negócio em crescimento",
     workspaces: "Até 4 workspaces",
@@ -47,7 +47,7 @@ export const plans: Plan[] = [
     featured: true,
     ctaLabel: "Começar teste de 14 dias",
     ctaHref: "app",
-    inherits: "Balcão",
+    inherits: "Corre",
     features: [
       "Até 4 workspaces — separe lojas, marcas, pontos ou sócios",
       "Usuários ilimitados com níveis de acesso",
@@ -62,8 +62,8 @@ export const plans: Plan[] = [
     ],
   },
   {
-    id: "rede",
-    name: "Rede",
+    id: "escala",
+    name: "Escala",
     tagline: "Para operações com várias unidades, franquias ou times grandes.",
     audience: "Operação multiunidade",
     workspaces: "Workspaces ilimitados",
@@ -71,7 +71,7 @@ export const plans: Plan[] = [
     yearlyMonthly: null,
     ctaLabel: "Falar com a gente",
     ctaHref: "whatsapp",
-    inherits: "Fornada",
+    inherits: "Cresce",
     features: [
       "Workspaces e usuários ilimitados",
       "Migração dos seus dados feita junto com você",

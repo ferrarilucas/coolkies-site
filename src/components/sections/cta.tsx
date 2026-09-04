@@ -5,10 +5,10 @@ export function Cta() {
   return (
     <section id="comecar" className="py-[clamp(80px,10vw,130px)] text-center">
       <div className="container">
-        <Reveal className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-choco via-primary to-[#A97144] px-[clamp(22px,4vw,56px)] py-[clamp(38px,6vw,72px)] text-primary-foreground shadow-deep">
+        <Reveal className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-moss via-primary to-leaf px-[clamp(22px,4vw,56px)] py-[clamp(38px,6vw,72px)] text-primary-foreground shadow-deep">
           <span
             className="pointer-events-none absolute -left-32 -top-56 h-[520px] w-[520px] animate-blob-b opacity-35"
-            style={{ background: "radial-gradient(circle,#DFA96E,transparent 62%)" }}
+            style={{ background: "radial-gradient(circle,#34D399,transparent 62%)" }}
             aria-hidden
           />
           <h2 className="relative mb-4 text-[clamp(1.9rem,4.4vw,3rem)]">Seu produto já é bom. Falta o negócio ser.</h2>

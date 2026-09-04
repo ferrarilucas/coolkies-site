@@ -37,11 +37,11 @@ export function Pricing() {
         <Reveal className="mb-10 max-w-[760px]">
           <span className="eyebrow">Planos</span>
           <h2 className="my-4 text-[clamp(1.9rem,4.4vw,3rem)]">
-            Menos que um pote de manteiga por semana.
+            Preço de quem entende quem está começando.
           </h2>
           <p className="lead">
-            Todos os planos vêm com os recursos completos do Coolkies. O que muda é quantos workspaces e quantas
-            pessoas trabalham com você. No anual você economiza R$ 120 — no Balcão, é o ano inteiro pelo preço de
+            Todos os planos vêm com os recursos completos do Bigas. O que muda é quantos workspaces e quantas
+            pessoas trabalham com você. No anual você economiza R$ 120 — no Corre, é o ano inteiro pelo preço de
             oito meses.
           </p>
         </Reveal>
@@ -50,7 +50,7 @@ export function Pricing() {
           <div
             role="radiogroup"
             aria-label="Ciclo de cobrança"
-            className="inline-flex items-center gap-1 rounded-full border border-border bg-background p-1.5 shadow-soft"
+            className="inline-flex items-center gap-1 rounded-full border border-border bg-secondary p-1.5 shadow-soft"
           >
             <button
               type="button"
@@ -100,12 +100,12 @@ export function Pricing() {
                 <article
                   className={`relative flex h-full flex-col rounded-xl border p-7 transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 ${
                     featured
-                      ? "border-transparent bg-gradient-to-br from-choco via-primary to-[#A97144] text-primary-foreground shadow-deep lg:-mt-4"
-                      : "border-border bg-background shadow-soft hover:shadow-card"
+                      ? "border-transparent bg-gradient-to-br from-moss via-primary to-leaf text-primary-foreground shadow-deep lg:-mt-4"
+                      : "border-border bg-secondary shadow-soft hover:shadow-card"
                   }`}
                 >
                   {featured && (
-                    <span className="absolute -top-3 left-7 rounded-full bg-caramel px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-choco shadow-soft">
+                    <span className="absolute -top-3 left-7 rounded-full bg-leaf px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-ink shadow-soft">
                       Mais escolhido
                     </span>
                   )}
@@ -150,7 +150,7 @@ export function Pricing() {
                               </span>
                               <span
                                 className={`rounded-full px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-wider ${
-                                  featured ? "bg-caramel text-choco" : "bg-success/12 text-success"
+                                  featured ? "bg-ink/85 text-leaf" : "bg-success/12 text-success"
                                 }`}
                               >
                                 {off}% off
@@ -235,7 +235,7 @@ export function Pricing() {
 
         <Reveal
           delay={120}
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 rounded-xl border border-border bg-background px-6 py-5 text-[14.5px] font-semibold text-muted-foreground shadow-soft"
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 rounded-xl border border-border bg-secondary px-6 py-5 text-[14.5px] font-semibold text-muted-foreground shadow-soft"
         >
           {guarantees.map((item) => (
             <span key={item} className="inline-flex items-center gap-2">
