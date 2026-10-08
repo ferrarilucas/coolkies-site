@@ -36,7 +36,7 @@ export const features: Feature[] = [
   {
     icon: "bag",
     title: "Mercados e comparação de preços",
-    text: "Registre onde comprou, quanto pagou e a quantidade. O Bigas converte para a unidade base e mostra onde o mesmo insumo sai mais barato.",
+    text: "Registre onde comprou, quanto pagou e a quantidade. O Cipri converte para a unidade base e mostra onde o mesmo insumo sai mais barato.",
   },
   {
     icon: "list",
@@ -116,24 +116,24 @@ export const highlights = [
 
 export const faqs = [
   {
-    q: "O Bigas serve para qualquer tipo de negócio?",
-    a: "Sim. O Bigas nasceu no mundo dos produtos alimentícios — cookies, doces, salgados, marmitas, bolos — mas funciona para qualquer micro, pequeno ou médio vendedor que precise controlar vendas, clientes, estoque e custos: brechó, artesanato, cosméticos, bebidas, feira e revenda em geral.",
+    q: "O Cipri serve para qualquer tipo de negócio?",
+    a: "Sim. O Cipri nasceu no mundo dos produtos alimentícios — cookies, doces, salgados, marmitas, bolos — mas funciona para qualquer micro, pequeno ou médio vendedor que precise controlar vendas, clientes, estoque e custos: brechó, artesanato, cosméticos, bebidas, feira e revenda em geral.",
   },
   {
     q: "Preciso instalar algum programa?",
-    a: "Não. O Bigas roda no navegador e pode ser instalado na tela inicial do celular como um aplicativo, com ícone próprio. Nada de loja de aplicativos, nada de atualização manual.",
+    a: "Não. O Cipri roda no navegador e pode ser instalado na tela inicial do celular como um aplicativo, com ícone próprio. Nada de loja de aplicativos, nada de atualização manual.",
   },
   {
     q: "Como funciona o controle de fiado e a previsão de recebimento?",
     a: "Toda venda pode ser marcada como paga ou pendente com data prevista. Há atalhos para as datas mais usadas no Brasil — o dia 5 do mês e o 5º dia útil, já considerando fins de semana e feriados nacionais. O valor a receber aparece no painel como receita prevista, separado do que já entrou.",
   },
   {
-    q: "O Bigas calcula o custo dos meus produtos?",
+    q: "O Cipri calcula o custo dos meus produtos?",
     a: "Sim. Você registra as compras de insumos por mercado e o sistema converte tudo para a unidade base. Pagou R$ 2,50 no quilo de açúcar? Ele já sabe quanto custam os 200 g da sua receita — e usa isso para calcular o custo da ficha técnica e o custo por unidade produzida.",
   },
   {
-    q: "O que é o parcelamento sem cartão do Bigas?",
-    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Bigas registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
+    q: "O que é o parcelamento sem cartão do Cipri?",
+    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Cipri registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
   },
   {
     q: "Qual plano eu escolho e o que é um workspace?",
@@ -145,7 +145,7 @@ export const faqs = [
   },
   {
     q: "Como funciona o desconto do Pix recorrente?",
-    a: "O Pix recorrente é a autorização que você dá uma única vez no app do seu banco para que a cobrança do Bigas seja debitada sozinha na data combinada — sem cartão e sem boleto para pagar todo mês. Como esse meio custa menos para nós do que a bandeira do cartão, devolvemos a diferença: R$ 5 a menos por mês, em qualquer plano e em qualquer ciclo. A autorização é cancelável por você no próprio banco, quando quiser.",
+    a: "O Pix recorrente é a autorização que você dá uma única vez no app do seu banco para que a cobrança do Cipri seja debitada sozinha na data combinada — sem cartão e sem boleto para pagar todo mês. Como esse meio custa menos para nós do que a bandeira do cartão, devolvemos a diferença: R$ 5 a menos por mês, em qualquer plano e em qualquer ciclo. A autorização é cancelável por você no próprio banco, quando quiser.",
   },
   {
     q: "Posso testar antes de pagar?",

@@ -50,10 +50,11 @@ const config: Config = {
           foreground: "hsl(var(--warning-foreground))",
           text: "hsl(var(--warning-text))",
         },
-        leaf: "#22C55E",
-        mint: "#34D399",
-        moss: "#14532D",
-        ink: "#0B0D0F",
+        leaf: "#1B5E50",
+        sun: "#FFC93D",
+        moss: "#0F3D34",
+        cream: "#F7F7EF",
+        ink: "#1F2937",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -69,9 +70,9 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 1px 2px hsl(210 15% 5% / .06)",
-        card: "0 8px 28px -10px hsl(210 15% 5% / .18)",
-        deep: "0 32px 64px -24px hsl(210 15% 5% / .34)",
+        soft: "0 1px 2px hsl(215 28% 12% / .06)",
+        card: "0 8px 28px -10px hsl(215 28% 12% / .18)",
+        deep: "0 32px 64px -24px hsl(215 28% 12% / .34)",
       },
       keyframes: {
         floaty: {

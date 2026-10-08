@@ -16,7 +16,7 @@ function Check({ muted = false }: { muted?: boolean }) {
     <svg
       viewBox="0 0 24 24"
       aria-hidden
-      className={`mt-[3px] h-[18px] w-[18px] shrink-0 ${muted ? "text-primary-foreground" : "text-success"}`}
+      className={`mt-[3px] h-[18px] w-[18px] shrink-0 ${muted ? "text-sun" : "text-success"}`}
       fill="none"
       stroke="currentColor"
       strokeWidth={2.6}
@@ -41,7 +41,7 @@ export function Pricing() {
             Preço de quem entende quem está começando.
           </h2>
           <p className="lead">
-            Todos os planos vêm com os recursos completos do Bigas. O que muda é quantos workspaces e quantas
+            Todos os planos vêm com os recursos completos do Cipri. O que muda é quantos workspaces e quantas
             pessoas trabalham com você. No plano anual pago com Pix recorrente você economiza R$ 180 por
             ano: R$ 120 por assinar o ano inteiro e mais R$ 60 por deixar a cobrança no Pix.
           </p>
@@ -128,29 +128,29 @@ export function Pricing() {
                 <article
                   className={`relative flex h-full flex-col rounded-xl border p-7 transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 ${
                     featured
-                      ? "border-transparent bg-gradient-to-br from-moss via-primary to-leaf text-primary-foreground shadow-deep lg:-mt-4"
+                      ? "border-transparent bg-gradient-to-br from-moss to-leaf text-cream shadow-deep lg:-mt-4"
                       : "border-border bg-secondary shadow-soft hover:shadow-card"
                   }`}
                 >
                   {featured && (
-                    <span className="absolute -top-3 left-7 rounded-full bg-leaf px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-ink shadow-soft">
+                    <span className="absolute -top-3 left-7 rounded-full bg-sun px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-moss shadow-soft">
                       Mais escolhido
                     </span>
                   )}
 
                   <span
                     className={`text-[12.5px] font-extrabold uppercase tracking-[0.08em] ${
-                      featured ? "text-primary-foreground/70" : "text-muted-foreground"
+                      featured ? "text-cream/70" : "text-muted-foreground"
                     }`}
                   >
                     {plan.audience}
                   </span>
                   <h3 className="mt-1.5 text-[1.6rem]">{plan.name}</h3>
-                  <p className={`mt-2 text-[15px] ${featured ? "text-primary-foreground/85" : "text-muted-foreground"}`}>
+                  <p className={`mt-2 text-[15px] ${featured ? "text-cream/85" : "text-muted-foreground"}`}>
                     {plan.tagline}
                   </p>
 
-                  <div className={`my-6 border-y py-6 ${featured ? "border-primary-foreground/20" : "border-border"}`}>
+                  <div className={`my-6 border-y py-6 ${featured ? "border-cream/20" : "border-border"}`}>
                     {custom ? (
                       <>
                         <b className="block text-[clamp(1.6rem,3vw,2rem)] font-black leading-none tracking-[-0.04em]">
@@ -158,7 +158,7 @@ export function Pricing() {
                         </b>
                         <span
                           className={`mt-3 block text-[14px] ${
-                            featured ? "text-primary-foreground/80" : "text-muted-foreground"
+                            featured ? "text-cream/80" : "text-muted-foreground"
                           }`}
                         >
                           Preço fechado conforme o tamanho da sua operação.
@@ -171,14 +171,14 @@ export function Pricing() {
                             <>
                               <span
                                 className={`text-[15px] font-semibold line-through ${
-                                  featured ? "text-primary-foreground/60" : "text-muted-foreground"
+                                  featured ? "text-cream/60" : "text-muted-foreground"
                                 }`}
                               >
                                 {brl.format(full!)}
                               </span>
                               <span
                                 className={`rounded-full px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-wider ${
-                                  featured ? "bg-ink/85 text-leaf" : "bg-success/12 text-success"
+                                  featured ? "bg-moss/90 text-sun" : "bg-success/12 text-success"
                                 }`}
                               >
                                 {off}% off
@@ -192,7 +192,7 @@ export function Pricing() {
                           </b>
                           <span
                             className={`pb-1.5 text-[15px] font-bold ${
-                              featured ? "text-primary-foreground/80" : "text-muted-foreground"
+                              featured ? "text-cream/80" : "text-muted-foreground"
                             }`}
                           >
                             /mês
@@ -200,7 +200,7 @@ export function Pricing() {
                         </div>
                         <span
                           className={`mt-2.5 block text-[14px] ${
-                            featured ? "text-primary-foreground/80" : "text-muted-foreground"
+                            featured ? "text-cream/80" : "text-muted-foreground"
                           }`}
                         >
                           {yearly
@@ -217,7 +217,7 @@ export function Pricing() {
 
                   <span
                     className={`mb-4 inline-flex w-fit items-center gap-2 rounded-full px-3.5 py-1.5 text-[13px] font-extrabold ${
-                      featured ? "bg-primary-foreground/15 text-primary-foreground" : "bg-secondary text-primary"
+                      featured ? "bg-cream/15 text-cream" : "bg-secondary text-primary"
                     }`}
                   >
                     {plan.workspaces}
@@ -233,7 +233,7 @@ export function Pricing() {
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex gap-2.5 text-[15px]">
                         <Check muted={featured} />
-                        <span className={featured ? "text-primary-foreground/90" : "text-muted-foreground"}>
+                        <span className={featured ? "text-cream/90" : "text-muted-foreground"}>
                           {feature}
                         </span>
                       </li>
@@ -243,14 +243,14 @@ export function Pricing() {
                   <a
                     href={href}
                     className={`btn mt-auto w-full ${
-                      featured ? "bg-background text-primary hover:-translate-y-0.5" : "btn-primary"
+                      featured ? "bg-sun text-moss hover:-translate-y-0.5" : "btn-primary"
                     }`}
                   >
                     {plan.ctaLabel}
                   </a>
                   <span
                     className={`mt-3 block text-center text-[13px] ${
-                      featured ? "text-primary-foreground/75" : "text-muted-foreground"
+                      featured ? "text-cream/75" : "text-muted-foreground"
                     }`}
                   >
                     {custom

@@ -1,7 +1,7 @@
-# Bigas — site
+# Cipri — site
 
-Landing page de venda do **Bigas** — *Negócio é negócio* —, o sistema de gestão para micro, pequenos e médios vendedores.
-Next.js 15 (App Router) + Tailwind, com os mesmos tokens visuais do `bigas-system`.
+Landing page de venda do **Cipri** — *Seu negócio no seu ritmo* —, o sistema de gestão para micro, pequenos e médios vendedores.
+Next.js 15 (App Router) + Tailwind, com a identidade do manual da marca Cipri.
 
 ## Rodar
 
@@ -13,25 +13,20 @@ npm run dev
 ## Identidade visual
 
 Paleta do manual da marca, em tokens HSL no `src/app/globals.css`. Os dois temas existem e o site abre no
-tema do sistema operacional; o botão no header sobrescreve e grava a escolha em `localStorage` (`bigas-theme`).
+tema do sistema operacional; o botão no header sobrescreve e grava a escolha em `localStorage` (`cipri-theme`).
 
 | Papel | Light | Dark |
 |---|---|---|
-| Background | `#F7F8F7` | `#0B0D0F` |
-| Surface (card) | `#FFFFFF` | `#12161A` |
-| Surface elevada (secondary) | `#F1F3F2` | `#191E23` |
-| Borda | `#E2E6E4` | `#272E35` |
-| Texto principal | `#151A17` | `#F4F7F5` |
-| Texto secundário | `#66706A` | `#98A2AB` |
-| Accent (primary) | `#16A34A` | `#22C55E` |
-| Accent suave (soft) | `#DCFCE7` | `#14532D` |
-| Sucesso | `#15803D` | `#34D399` |
-| Erro | `#DC2626` | `#F87171` |
-| Warning | `#D97706` | `#FBBF24` |
+| Background | `#F7F7EF` (creme) | `#1F2937` (grafite) |
+| Surface (card) | `#FFFFFF` | `#273244` |
+| Texto principal | `#1F2937` | `#F7F7EF` |
+| Accent (primary) | `#0F3D34` (verde principal) | `#FFC93D` (amarelo) |
+| Accent suave (soft) | `#FFEFC2` | `#1C4A42` |
 
-Cores fixas de gradiente ficam em `tailwind.config.ts`: `leaf #22C55E`, `mint #34D399`, `moss #14532D`,
-`ink #0B0D0F`. A marca (`BigasMark` em `src/components/icons.tsx` e `public/icon.svg`) usa os verdes do
-logo original: `#35B379` e `#1C8F63`. Fonte Inter, `--radius: 0.875rem`.
+Cores fixas em `tailwind.config.ts`: `moss #0F3D34`, `leaf #1B5E50`, `sun #FFC93D`, `cream #F7F7EF`,
+`ink #1F2937`. Os blocos de destaque (CTA, plano em destaque) usam sempre verde `moss` com texto `cream`, nos dois
+temas. O logotipo (`CipriLogo` em `src/components/icons.tsx`) herda a cor do texto e mantém o ponto amarelo; os SVGs
+originais ficam em `public/brand/` e o favicon em `public/icon.svg`. Fonte Sora, `--radius: 0.875rem`.
 
 ## Estrutura
 
@@ -50,9 +45,9 @@ logo original: `#35B379` e `#1C8F63`. Fonte Inter, `--radius: 0.875rem`.
 
 Trocar em `src/lib/site.ts`:
 
-- `url` — domínio real (hoje `https://bigas.com.br`, ainda não confirmado)
-- `appUrl` — URL do sistema (hoje `https://app.bigas.com.br`)
-- `whatsapp` — número real (hoje `5500000000000`, placeholder)
+- `url` — domínio real (hoje `https://cipri.com.br`, ainda não confirmado)
+- `appUrl` — URL do sistema (hoje `https://app.cipri.com.br`)
+- `whatsapp` — número do WhatsApp (hoje `5551999892403`)
 - `email` — e-mail de contato
 
 ## SEO

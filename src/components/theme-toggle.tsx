@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "@/components/icons";
 
-const STORAGE_KEY = "bigas-theme";
+const STORAGE_KEY = "cipri-theme";
 
 export function ThemeToggle({ className = "" }: { className?: string }) {
   const [dark, setDark] = useState<boolean | null>(null);
