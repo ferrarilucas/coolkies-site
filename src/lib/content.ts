@@ -133,7 +133,7 @@ export const faqs = [
   },
   {
     q: "O que é o parcelamento sem cartão do Cipri?",
-    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Cipri registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa.",
+    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Cipri registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa. Estará disponível em todos os planos, sem custo extra.",
   },
   {
     q: "Qual plano eu escolho e o que é um workspace?",
