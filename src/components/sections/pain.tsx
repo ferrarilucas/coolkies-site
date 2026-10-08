@@ -33,20 +33,20 @@ export function Pain() {
           ))}
         </div>
 
-        <Reveal className="relative mt-9 flex flex-wrap items-center justify-between gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-moss p-[clamp(26px,4vw,40px)] text-primary-foreground shadow-card">
+        <Reveal className="relative mt-9 flex flex-wrap items-center justify-between gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-moss to-leaf p-[clamp(26px,4vw,40px)] text-cream shadow-card">
           <span
             className="pointer-events-none absolute -right-10 -top-40 h-[340px] w-[340px] animate-blob-a opacity-35"
-            style={{ background: "radial-gradient(circle,#34D399,transparent 65%)" }}
+            style={{ background: "radial-gradient(circle,#FFC93D,transparent 65%)" }}
             aria-hidden
           />
           <div className="relative">
-            <h3 className="max-w-[22ch] text-[clamp(1.3rem,3vw,1.9rem)]">Bigas: o caderninho que virou sistema.</h3>
+            <h3 className="max-w-[22ch] text-[clamp(1.3rem,3vw,1.9rem)]">Cipri: o caderninho que virou sistema.</h3>
             <p className="mt-2 max-w-[44ch] text-[15.5px] opacity-85">
               Cada venda registrada em segundos, cada fiado com data, cada receita com custo real. Profissional sem ser
               complicado.
             </p>
           </div>
-          <a className="btn btn-lg relative bg-background text-primary hover:-translate-y-0.5" href="#comecar">
+          <a className="btn btn-lg relative bg-sun text-moss hover:-translate-y-0.5" href="#comecar">
             Quero organizar meu corre
           </a>
         </Reveal>

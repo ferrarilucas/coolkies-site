@@ -25,12 +25,12 @@ export function Hero() {
     <section id="topo" className="relative overflow-hidden py-[clamp(56px,9vw,110px)]">
       <span
         className="blob -right-36 -top-40 h-[520px] w-[520px] animate-blob-a"
-        style={{ background: "radial-gradient(circle,#22C55E,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#FFC93D,transparent 68%)" }}
         aria-hidden
       />
       <span
         className="blob -bottom-44 -left-40 h-[440px] w-[440px] animate-blob-b opacity-30"
-        style={{ background: "radial-gradient(circle,#16A34A,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#1B5E50,transparent 68%)" }}
         aria-hidden
       />
       <span className="pointer-events-none absolute left-[6%] top-[18%] animate-drift opacity-50" aria-hidden>
@@ -40,7 +40,7 @@ export function Hero() {
         className="pointer-events-none absolute bottom-[14%] left-[14%] animate-drift opacity-40 [animation-delay:-3s] [animation-duration:14s]"
         aria-hidden
       >
-        <Sprout size={22} tone="#34D399" />
+        <Sprout size={22} tone="#FFC93D" />
       </span>
 
       <div className="container grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
@@ -62,7 +62,7 @@ export function Hero() {
                 <path
                   d="M4 16 C 90 4, 190 4, 274 12 S 380 20, 416 10"
                   fill="none"
-                  stroke="#22C55E"
+                  stroke="#FFC93D"
                   strokeWidth={9}
                   strokeLinecap="round"
                   strokeDasharray={420}
@@ -75,7 +75,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal as="p" delay={160} className="lead">
-            Bigas é o sistema de gestão que organiza{" "}
+            Cipri é o sistema de gestão que organiza{" "}
             <span className="rotator" aria-hidden>
               <span className="block animate-roll">
                 <b>suas vendas</b>
@@ -137,13 +137,13 @@ export function Hero() {
           <div
             className="phone-frame relative w-[min(330px,84vw)] animate-floaty rounded-[44px] p-[11px] shadow-deep"
             role="img"
-            aria-label="Painel do Bigas com faturamento recebido, valores previstos, gráfico de vendas e lista de pedidos"
+            aria-label="Painel do Cipri com faturamento recebido, valores previstos, gráfico de vendas e lista de pedidos"
           >
-            <span className="absolute left-1/2 top-[9px] z-10 h-[22px] w-24 -translate-x-1/2 rounded-full bg-[#0B0D0F]" aria-hidden />
+            <span className="absolute left-1/2 top-[9px] z-10 h-[22px] w-24 -translate-x-1/2 rounded-full bg-[#111827]" aria-hidden />
             <div className="relative overflow-hidden rounded-[34px] bg-background">
               <div className="flex items-center justify-between px-4 pb-2.5 pt-[34px] text-xs font-semibold text-muted-foreground">
                 <span>9:41</span>
-                <span>Bigas</span>
+                <span>Cipri</span>
               </div>
               <div className="px-4 pb-3 text-xl font-extrabold tracking-tight">Painel</div>
 
@@ -166,7 +166,7 @@ export function Hero() {
                       className={`flex-1 origin-bottom scale-y-0 animate-grow rounded-t ${
                         bar.pending
                           ? "border border-border bg-[repeating-linear-gradient(135deg,hsl(var(--secondary)),hsl(var(--secondary))_4px,hsl(var(--accent))_4px,hsl(var(--accent))_8px)]"
-                          : "bg-gradient-to-b from-mint to-primary"
+                          : "bg-gradient-to-b from-sun to-primary"
                       }`}
                       style={{ height: bar.height, animationDelay: `${0.15 + index * 0.07}s` }}
                     />

@@ -1,16 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import { site } from "@/lib/site";
 import { themeScript } from "@/components/theme-toggle";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const sora = Sora({ subsets: ["latin", "latin-ext"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: site.title,
-    template: "%s · Bigas",
+    template: "%s · Cipri",
   },
   description: site.description,
   keywords: [...site.keywords],
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: site.url,
     siteName: site.name,
-    title: `Bigas — ${site.tagline.toLowerCase()}`,
+    title: `Cipri — ${site.tagline}`,
     description: site.shortDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: `Bigas — ${site.tagline.toLowerCase()}`,
+    title: `Cipri — ${site.tagline}`,
     description: site.shortDescription,
   },
   icons: {
@@ -48,8 +48,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F7F8F7" },
-    { media: "(prefers-color-scheme: dark)", color: "#0B0D0F" },
+    { media: "(prefers-color-scheme: light)", color: "#F7F7EF" },
+    { media: "(prefers-color-scheme: dark)", color: "#1F2937" },
   ],
 };
 
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className={`${inter.variable} font-sans`}>{children}</body>
+      <body className={`${sora.variable} font-sans`}>{children}</body>
     </html>
   );
 }

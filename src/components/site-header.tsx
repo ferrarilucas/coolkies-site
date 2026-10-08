@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { site } from "@/lib/site";
-import { BigasMark } from "@/components/icons";
+import { CipriLogo } from "@/components/icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
@@ -32,14 +31,8 @@ export function SiteHeader() {
       style={{ background: "hsl(var(--background) / 0.82)" }}
     >
       <div className="container flex h-[72px] items-center justify-between gap-6">
-        <Link href="#topo" className="group flex items-center gap-2.5">
-          <BigasMark size={34} className="shrink-0 transition-transform duration-300 group-hover:scale-110" />
-          <span className="flex flex-col leading-none">
-            <span className="text-[1.35rem] font-black tracking-[-0.045em]">Bigas</span>
-            <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              {site.tagline}
-            </span>
-          </span>
+        <Link href="#topo" className="group flex items-center" aria-label="Cipri">
+          <CipriLogo height={34} className="shrink-0 text-moss transition-transform duration-300 group-hover:scale-105 dark:text-cream" />
         </Link>
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-[15px] font-semibold text-muted-foreground lg:flex">
