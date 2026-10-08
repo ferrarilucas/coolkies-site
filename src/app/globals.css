@@ -139,8 +139,8 @@
     @apply pointer-events-none absolute rounded-full opacity-50 blur-[70px];
   }
   .phone-frame {
-    background: linear-gradient(160deg, #374151, #111827);
-    transform: rotateY(-11deg) rotateX(5deg) rotateZ(-1.5deg);
+    background: linear-gradient(160deg, #4B5563, #1F2937);
+    transform: rotateY(-9deg) rotateX(3deg);
     transform-style: preserve-3d;
   }
   .rotator {

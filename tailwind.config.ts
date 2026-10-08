@@ -76,8 +76,8 @@ const config: Config = {
       },
       keyframes: {
         floaty: {
-          "0%, 100%": { transform: "translateY(0) rotateY(-11deg) rotateX(5deg) rotateZ(-1.5deg)" },
-          "50%": { transform: "translateY(-16px) rotateY(-11deg) rotateX(5deg) rotateZ(-1.5deg)" },
+          "0%, 100%": { transform: "translateY(0) rotateY(-9deg) rotateX(3deg)" },
+          "50%": { transform: "translateY(-12px) rotateY(-9deg) rotateX(3deg)" },
         },
         bob: {
           "0%, 100%": { transform: "translateY(0)" },

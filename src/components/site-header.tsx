@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { site } from "@/lib/site";
 import { CipriLogo } from "@/components/icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -30,9 +31,9 @@ export function SiteHeader() {
       }`}
       style={{ background: "hsl(var(--background) / 0.82)" }}
     >
-      <div className="container flex h-[72px] items-center justify-between gap-6">
+      <div className="container flex h-[72px] items-center justify-between gap-3 sm:gap-6">
         <Link href="#topo" className="group flex items-center" aria-label="Cipri">
-          <CipriLogo height={34} className="shrink-0 text-moss transition-transform duration-300 group-hover:scale-105 dark:text-cream" />
+          <CipriLogo height={34} className="h-7 w-auto shrink-0 sm:h-[34px] text-moss transition-transform duration-300 group-hover:scale-105 dark:text-cream" />
         </Link>
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-[15px] font-semibold text-muted-foreground lg:flex">
@@ -48,9 +49,12 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2 sm:gap-2.5">
           <ThemeToggle />
-          <a className="btn btn-primary px-5 py-[11px] text-[15px]" href="#comecar">
+          <a className="btn btn-ghost px-3.5 py-[10px] text-sm sm:px-5 sm:py-[11px] sm:text-[15px]" href={site.appUrl}>
+            Entrar
+          </a>
+          <a className="btn btn-primary px-3.5 py-[10px] text-sm sm:px-5 sm:py-[11px] sm:text-[15px]" href="#comecar">
             Quero testar
           </a>
         </div>
