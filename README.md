@@ -17,16 +17,17 @@ tema do sistema operacional; o botão no header sobrescreve e grava a escolha em
 
 | Papel | Light | Dark |
 |---|---|---|
-| Background | `#F7F7EF` (creme) | `#1F2937` (grafite) |
-| Surface (card) | `#FFFFFF` | `#273244` |
-| Texto principal | `#1F2937` | `#F7F7EF` |
-| Accent (primary) | `#0F3D34` (verde principal) | `#FFC93D` (amarelo) |
-| Accent suave (soft) | `#FFEFC2` | `#1C4A42` |
+| Background | `#F7F4ED` (creme) | `#25251F` (carvão) |
+| Surface (card) | `#FFFDF9` | `#2F2E28` |
+| Texto principal | `#25251F` | `#F7F4ED` |
+| Accent (primary) | `#C94F32` (terracota) | `#E26B4D` (terracota claro, para manter contraste) |
+| Accent suave (soft) | `#F8DDD2` | `#4E2A20` |
 
-Cores fixas em `tailwind.config.ts`: `moss #0F3D34`, `leaf #1B5E50`, `sun #FFC93D`, `cream #F7F7EF`,
-`ink #1F2937`. Os blocos de destaque (CTA, plano em destaque) usam sempre verde `moss` com texto `cream`, nos dois
-temas. O logotipo (`CipriLogo` em `src/components/icons.tsx`) herda a cor do texto e mantém o ponto amarelo; os SVGs
-originais ficam em `public/brand/` e o favicon em `public/icon.svg`. Fonte Sora, `--radius: 0.875rem`.
+Cores fixas em `tailwind.config.ts`: `terra #C94F32`, `terra-dark #A63E25`, `areia #D7B98E`, `bege #E7D7C0`,
+`creme #F7F4ED`, `carvao #25251F`. Os blocos de destaque (CTA, plano em destaque) usam sempre terracota com texto
+branco, nos dois temas. O logotipo (`CipriLogo` em `src/components/icons.tsx`) herda a cor do texto e mantém o ponto
+em areia; os SVGs originais ficam em `public/brand/` e o favicon em `public/icon.svg`. A foto do hero é
+`public/hero-lojista-recorte.webp` (imagem gerada por IA, recortada sem fundo; os cartões e o texto manuscrito são HTML animado em `src/components/hero-visual.tsx`). Fonte Sora, `--radius: 0.875rem`.
 
 ## Estrutura
 

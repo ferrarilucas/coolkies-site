@@ -32,7 +32,7 @@ export const plans: Plan[] = [
       "Receitas com custo real e custo por unidade produzida",
       "Clientes com histórico de compras e pendências",
       "Painel de faturamento, ticket médio e filtros por período",
-      "Parcelado na Palavra incluído assim que for lançado",
+      "Parcelado na Palavra: parcelamento sem cartão, combinado direto com o cliente",
       "App na tela do celular, sem loja de aplicativos",
       "Suporte por WhatsApp em horário comercial",
     ],

@@ -4,7 +4,6 @@ export type Feature = {
   icon: IconName;
   title: string;
   text: string;
-  soon?: boolean;
 };
 
 export const features: Feature[] = [
@@ -52,7 +51,6 @@ export const features: Feature[] = [
     icon: "coins",
     title: "Parcelado na Palavra",
     text: "O parcelamento sem cartão, combinado de boca em boca. Você define as parcelas, o sistema cobra a data e joga tudo na sua previsão de caixa.",
-    soon: true,
   },
 ];
 
@@ -133,7 +131,7 @@ export const faqs = [
   },
   {
     q: "O que é o parcelamento sem cartão do Cipri?",
-    a: "É o Parcelado na Palavra, recurso em desenvolvimento: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Cipri registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa. Estará disponível em todos os planos, sem custo extra.",
+    a: "É o Parcelado na Palavra: o parcelamento de boca em boca, combinado direto com o cliente, sem maquininha e sem intermediário levando um pedaço. O Cipri registra o combinado, controla parcela por parcela e coloca cada uma na sua previsão de caixa. Está disponível em todos os planos, sem custo extra.",
   },
   {
     q: "Qual plano eu escolho e o que é um workspace?",

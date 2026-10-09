@@ -33,10 +33,10 @@ export function SiteHeader() {
     >
       <div className="container flex h-[72px] items-center justify-between gap-3 sm:gap-6">
         <Link href="#topo" className="group flex items-center" aria-label="Cipri">
-          <CipriLogo height={34} className="h-7 w-auto shrink-0 sm:h-[34px] text-moss transition-transform duration-300 group-hover:scale-105 dark:text-cream" />
+          <CipriLogo height={34} className="h-7 w-auto shrink-0 sm:h-[34px] text-terra transition-transform duration-300 group-hover:scale-105 dark:text-creme" />
         </Link>
 
-        <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-[15px] font-semibold text-muted-foreground lg:flex">
+        <nav aria-label="Navegação principal" className="hidden items-center gap-5 whitespace-nowrap text-[14px] font-semibold text-muted-foreground lg:flex xl:gap-7 xl:text-[15px]">
           {links.map((link) => (
             <a
               key={link.href}

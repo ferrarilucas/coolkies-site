@@ -33,10 +33,10 @@ export function Pain() {
           ))}
         </div>
 
-        <Reveal className="relative mt-9 flex flex-wrap items-center justify-between gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-moss to-leaf p-[clamp(26px,4vw,40px)] text-cream shadow-card">
+        <Reveal className="relative mt-9 flex flex-wrap items-center justify-between gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-terra to-terra-dark p-[clamp(26px,4vw,40px)] text-white shadow-card">
           <span
             className="pointer-events-none absolute -right-10 -top-40 h-[340px] w-[340px] animate-blob-a opacity-35"
-            style={{ background: "radial-gradient(circle,#FFC93D,transparent 65%)" }}
+            style={{ background: "radial-gradient(circle,#D7B98E,transparent 65%)" }}
             aria-hidden
           />
           <div className="relative">
@@ -46,7 +46,7 @@ export function Pain() {
               complicado.
             </p>
           </div>
-          <a className="btn btn-lg relative bg-sun text-moss hover:-translate-y-0.5" href="#comecar">
+          <a className="btn btn-lg relative bg-creme text-terra hover:-translate-y-0.5" href="#comecar">
             Quero organizar meu corre
           </a>
         </Reveal>

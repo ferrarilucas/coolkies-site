@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Hero } from "@/components/sections/hero";
+import { Dashboard } from "@/components/sections/dashboard";
 import { Marquee } from "@/components/sections/marquee";
 import { Pain } from "@/components/sections/pain";
 import { Features } from "@/components/sections/features";
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
+        <Dashboard />
         <Pain />
         <Features />
         <Installments />

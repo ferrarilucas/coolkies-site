@@ -18,13 +18,13 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "0 80px",
-          background: "linear-gradient(140deg,#0F3D34 0%,#0B2E27 60%,#1B5E50 100%)",
+          background: "linear-gradient(140deg,#C94F32 0%,#B24428 55%,#8F3520 100%)",
           fontFamily: "sans-serif",
-          color: "#F7F7EF",
+          color: "#F7F4ED",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 22, marginBottom: 44 }}>
-          <CipriLogo height={96} className="text-cream" />
+          <CipriLogo height={96} className="text-creme" />
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", fontSize: 74, fontWeight: 800, letterSpacing: -3, lineHeight: 1.1 }}>
@@ -32,7 +32,7 @@ export default function OpengraphImage() {
           <span>no seu ritmo.</span>
         </div>
 
-        <div style={{ display: "flex", width: 220, height: 8, borderRadius: 4, background: "#FFC93D", margin: "34px 0" }} />
+        <div style={{ display: "flex", width: 220, height: 8, borderRadius: 4, background: "#D7B98E", margin: "34px 0" }} />
 
         <div style={{ display: "flex", flexDirection: "column", fontSize: 30, opacity: 0.94, lineHeight: 1.35 }}>
           <span>Vendas, fiado, estoque, receitas e custo real</span>
@@ -45,8 +45,8 @@ export default function OpengraphImage() {
             marginTop: 40,
             padding: "12px 30px",
             borderRadius: 999,
-            background: "#FFC93D",
-            color: "#0F3D34",
+            background: "#F7F4ED",
+            color: "#A63E25",
             fontSize: 22,
             fontWeight: 700,
           }}

@@ -46,12 +46,12 @@ export function Installments() {
     <section id="parcelado" className="relative overflow-hidden py-[clamp(70px,9vw,110px)]">
       <span
         className="blob -right-32 top-10 h-[420px] w-[420px] animate-blob-a opacity-25"
-        style={{ background: "radial-gradient(circle,#FFC93D,transparent 68%)" }}
+        style={{ background: "radial-gradient(circle,#D7B98E,transparent 68%)" }}
         aria-hidden
       />
       <div className="container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal>
-          <span className="eyebrow">Em breve · exclusivo Cipri</span>
+          <span className="eyebrow">Novo · exclusivo Cipri</span>
           <h2 className="my-4 text-[clamp(1.9rem,4.4vw,3rem)]">
             Parcelado na Palavra: o <em className="not-italic text-primary">parcelamento de boca em boca</em>, agora com
             sistema atrás.
@@ -122,7 +122,7 @@ export function Installments() {
 
             <div className="mt-[18px] h-[7px] overflow-hidden rounded-full bg-muted">
               <span
-                className="block h-full rounded-full bg-gradient-to-r from-sun to-primary transition-[width] duration-1000 ease-out"
+                className="block h-full rounded-full bg-gradient-to-r from-areia to-primary transition-[width] duration-1000 ease-out"
                 style={{ width: `${(paidValue / total) * 100}%` }}
               />
             </div>

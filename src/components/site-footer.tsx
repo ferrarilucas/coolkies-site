@@ -37,7 +37,7 @@ export function SiteFooter() {
         <div className="grid gap-8 border-b border-border pb-9 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <a href="#topo" className="mb-3 inline-flex" aria-label="Cipri">
-              <CipriLogo height={36} className="shrink-0 text-moss dark:text-cream" />
+              <CipriLogo height={36} className="shrink-0 text-terra dark:text-creme" />
             </a>
             <p>{site.tagline} O caderninho que virou sistema, para quem faz o negócio acontecer.</p>
           </div>

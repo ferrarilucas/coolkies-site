@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Sora } from "next/font/google";
+import { Caveat, Sora } from "next/font/google";
 import { site } from "@/lib/site";
 import { themeScript } from "@/components/theme-toggle";
 import "./globals.css";
 
+const caveat = Caveat({ subsets: ["latin"], variable: "--font-hand", display: "swap", weight: ["600"] });
 const sora = Sora({ subsets: ["latin", "latin-ext"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {
@@ -48,8 +49,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F7F7EF" },
-    { media: "(prefers-color-scheme: dark)", color: "#1F2937" },
+    { media: "(prefers-color-scheme: light)", color: "#F7F4ED" },
+    { media: "(prefers-color-scheme: dark)", color: "#25251F" },
   ],
 };
 
@@ -59,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className={`${sora.variable} font-sans`}>{children}</body>
+      <body className={`${sora.variable} ${caveat.variable} font-sans`}>{children}</body>
     </html>
   );
 }

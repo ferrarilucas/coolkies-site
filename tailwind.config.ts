@@ -50,11 +50,14 @@ const config: Config = {
           foreground: "hsl(var(--warning-foreground))",
           text: "hsl(var(--warning-text))",
         },
-        leaf: "#1B5E50",
-        sun: "#FFC93D",
-        moss: "#0F3D34",
-        cream: "#F7F7EF",
-        ink: "#1F2937",
+        terra: {
+          DEFAULT: "#C94F32",
+          dark: "#A63E25",
+        },
+        areia: "#D7B98E",
+        bege: "#E7D7C0",
+        creme: "#F7F4ED",
+        carvao: "#25251F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -68,11 +71,12 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        hand: ["var(--font-hand)", "cursive"],
       },
       boxShadow: {
-        soft: "0 1px 2px hsl(215 28% 12% / .06)",
-        card: "0 8px 28px -10px hsl(215 28% 12% / .18)",
-        deep: "0 32px 64px -24px hsl(215 28% 12% / .34)",
+        soft: "0 1px 2px hsl(60 9% 8% / .06)",
+        card: "0 8px 28px -10px hsl(60 9% 8% / .18)",
+        deep: "0 32px 64px -24px hsl(60 9% 8% / .34)",
       },
       keyframes: {
         floaty: {
@@ -118,6 +122,26 @@ const config: Config = {
           "80%, 96%": { transform: "translateY(-6em)" },
           "100%": { transform: "translateY(-7.5em)" },
         },
+        "photo-in": {
+          from: { opacity: "0", transform: "translateY(22px) scale(0.94)", filter: "blur(10px)" },
+          to: { opacity: "1", transform: "none", filter: "blur(0)" },
+        },
+        "note-in": {
+          from: { opacity: "0", transform: "translateY(14px) scale(0.82)" },
+          to: { opacity: "1", transform: "none" },
+        },
+        "line-draw": {
+          from: { strokeDasharray: "1", strokeDashoffset: "1" },
+          to: { strokeDasharray: "1", strokeDashoffset: "0" },
+        },
+        "dot-in": {
+          from: { opacity: "0", transform: "translate(-50%,-50%) scale(0)" },
+          to: { opacity: "1", transform: "translate(-50%,-50%) scale(1)" },
+        },
+        "wipe-in": {
+          from: { clipPath: "inset(0 100% 0 0)", opacity: "0" },
+          to: { clipPath: "inset(0 0 0 0)", opacity: "1" },
+        },
         "fade-in": {
           from: { opacity: "0", transform: "translateY(-6px)" },
           to: { opacity: "1", transform: "none" },
@@ -135,6 +159,11 @@ const config: Config = {
         drift: "drift 11s ease-in-out infinite",
         roll: "roll 11s cubic-bezier(.6,0,.2,1) infinite",
         "fade-in": "fade-in .35s ease",
+        "photo-in": "photo-in 1s cubic-bezier(.2,.8,.2,1) both",
+        note: "note-in .7s cubic-bezier(.2,.9,.3,1.25) both, bob 6s ease-in-out infinite",
+        "line-draw": "line-draw .55s cubic-bezier(.4,0,.2,1) both",
+        "dot-in": "dot-in .4s cubic-bezier(.2,.9,.3,1.4) both",
+        "wipe-in": "wipe-in 1.2s cubic-bezier(.5,0,.2,1) both",
       },
     },
   },
