@@ -61,7 +61,7 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-wrap justify-between gap-3 pt-5 text-[13.5px]">
-          <span>© {new Date().getFullYear()} Cipri. Feito no Brasil, em português.</span>
+          <span>© {new Date().getFullYear()} Cipri. Feito com ☕ e código. Os bugs a gente anota no caderninho 📒</span>
           <span>Tecnologia para gente real</span>
         </div>
 
